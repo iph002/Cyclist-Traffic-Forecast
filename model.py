@@ -5,18 +5,13 @@ import pickle
 
 # Extra libraries
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Scikit-Learn imports
 from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.impute import KNNImputer
-from sklearn.dummy import DummyRegressor
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.neighbors import KNeighborsRegressor
-from sklearn.feature_selection import RFE
 
 ########################################
 # Step 1: Prepare the Traffic Data

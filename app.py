@@ -13,7 +13,7 @@ with open("trained_model.pkl", "rb") as file:
     model = pickle.load(file)
 
 # -----------------------------------------------------------------------------
-# 2) Load or Prepare Weather Data (e.g., "all_weather_data.csv")
+# 2) Load or Prepare Weather Data
 # -----------------------------------------------------------------------------
 weather_data = pd.read_csv("all_weather_data.csv", sep=",", engine="python")
 
@@ -75,7 +75,7 @@ def index():
             solskinstid = float(solskinstid) if solskinstid and solskinstid.strip() != "" else 0.0
 
             # -----------------------------------------------------------------
-            # Call your custom predict_traffic() function
+            # Call custom predict_traffic() function
             # -----------------------------------------------------------------
             prediction = predict_traffic(
                 date_str, 
